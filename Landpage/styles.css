@@ -1,0 +1,207 @@
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Tipografías */
+/*@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&family=Lobster&display=swap');
+*/
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Dancing+Script:wght@400;700&display=swap');
+/* Paleta de colores oscuros y difuminados */
+:root {
+    --primary-color: #2c3e50; /* Azul oscuro */
+    --secondary-color: #8e44ad; /* Morado oscuro */
+    --background-color: #34495e; /* Gris oscuro */
+    --text-color: #ecf0f1; /* Blanco ahumado */
+    --hover-color: #16a085; /* Verde azulado */
+}
+
+body {
+    font-family: "Gupter", serif;
+    background-color: var(--background-color);
+    color: var(--text-color);
+    font-size: 24px;
+}
+
+header {
+    background-color: var(--primary-color);
+    padding: 1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+    border-radius: 8px;
+    background-color: var(--primary-color);
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+    background-color: var(--hover-color);
+}
+
+main {
+    padding: 2rem;
+}
+
+section {
+    margin-bottom: 2rem;
+}
+
+h1 {
+    font-family: "Gupter", serif;
+    color: #16a085;
+    text-align: center;
+}
+
+footer {
+    background-color: var(--primary-color);
+    color: var(--text-color);
+    text-align: center;
+    padding: 1rem 0;
+}
+
+.image-row {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1rem;
+}
+
+.image-row img {
+    width: 40%;
+    height: 350px; /* Fijar altura para todas las imágenes */
+    object-fit: cover; /* Mantener la relación de aspecto y recortar el exceso */
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    margin: 10px;
+}
+
+.image-row img:hover {
+    transform: scale(1.05);
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .image-row img {
+        width: 80%;
+        margin-bottom: 1rem;
+    }
+}
+
+/*********CONTACTOS***********/
+:root {
+    --form-background-color: #2c3e50; /* Fondo del formulario */
+    --form-border-color: #16a085; /* Borde del formulario */
+}
+
+#contacto form {
+    background-color: var(--form-background-color);
+    padding: 2rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 2px solid var(--form-border-color);
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+#contacto form label {
+    font-family: "Gupter", serif;
+    color: var(--text-color);
+    display: block;
+    margin-bottom: 0.5rem;
+    font-size: 1.5rem;
+}
+
+#contacto form input, #contacto form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border-radius: 4px;
+    border: 1px solid var(--form-border-color);
+    font-family: 'Dancing Script', cursive;
+}
+
+#contacto form button {
+    background-color: var(--hover-color);
+    color: var(--text-color);
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contacto form button:hover {
+    background-color: var(--secondary-color);
+}
+
+/***************PROMOCIONES****************/
+
+/* Estilización de la sección de promociones */
+#promociones {
+    padding: 2rem;
+}
+
+#promociones h1 {
+    font-family: "Gupter", serif;
+    color: var(--hover-color);
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.promociones-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.promocion {
+    background-color: var(--primary-color);
+    border: 2px solid var(--secondary-color);
+    border-radius: 8px;
+    padding: 1rem;
+    width: 300px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.promocion img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    margin-bottom: 1rem;
+}
+
+.promocion h2 {
+    font-family: "Gupter", serif;
+    color: var(--text-color);
+    margin-bottom: 0.5rem;
+}
+
+.promocion p {
+    color: var(--hover-color);
+    font-family: "Gupter", serif;
+}
